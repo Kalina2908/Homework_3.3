@@ -38,10 +38,10 @@ int GetSum (int number) // функция должна работать для �
     int y=0;
     while (number>9)
     {
-        x=number/Convert.ToInt32(Math.Pow(10, (lenght-1)));
+        x=number/Convert.ToInt32(Math.Pow(10, (lenght-1))); // Больше скобок богу скобок!
         y=number%10;
         sum=sum+(x-y);
-        number=(number-(x*Convert.ToInt32(Math.Pow(10, (lenght-1)))))/10;
+        number=(number-(x*Convert.ToInt32(Math.Pow(10, (lenght-1)))))/10; // Еще больше скобок богу скобок!
         lenght=lenght-2;
     }
     return sum; 
